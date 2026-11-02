@@ -24,6 +24,7 @@ public class Invoice {
     private long number;
     private LocalDate date;
     private InvoiceState state = InvoiceState.ISSUED;
+    private boolean usedForVoucher = false;
 
     /*
      * Subtotal amount of the invoice, before applying VAT. This represents the
